@@ -37,16 +37,18 @@ def Sub_string_divisibility(tple):
     return True
         
 
-        
-hold=permutation_list(9)
-list_to_sum =[]
-for i in hold:
-    if Sub_string_divisibility(i)==True:
-        lol =''
-        for j in i:
-            lol+=str(j)
-        list_to_sum.append(int(lol))
-print(list_to_sum)
-print(sum(list_to_sum))
+def main():       
+    hold=permutation_list(9)
+    list_to_sum =[]
+    for i in hold:
+        if Sub_string_divisibility(i)==True:
+            lol =''
+            for j in i:
+                lol+=str(j)
+            list_to_sum.append(int(lol))
+    print(list_to_sum)
+    print(sum(list_to_sum))
+    print('hello branchnjnkjnkj')
 
+main()
 
